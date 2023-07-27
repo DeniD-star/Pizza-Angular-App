@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pizza-angular-app-1ed00": {
+      "hosting": {
+        "pizza-app": [
+          "pizza-angular-app-1ed00"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pizza-angular-app-1ed00"
+  }
+}
