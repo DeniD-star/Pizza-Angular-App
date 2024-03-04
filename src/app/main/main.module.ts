@@ -6,8 +6,9 @@ import { WhitePizzasComponent } from './white-pizzas/white-pizzas.component';
 import { DessertsComponent } from './desserts/desserts.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { ProfileComponent } from './profile/profile.component';
-
-
+import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
+import { ClientsCatalogComponent } from './clients-catalog/clients-catalog.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,22 @@ import { ProfileComponent } from './profile/profile.component';
     WhitePizzasComponent,
     DessertsComponent,
     DrinksComponent,
-    ProfileComponent
+    ProfileComponent,
+    CreateComponent,
+    EditComponent,
+    ClientsCatalogComponent,
   ],
-  imports: [
-    CommonModule
+  imports: [CommonModule],
+  exports: [
+    CatalogComponent,
+    ProfileComponent,
+    TraditionalPizzasComponent,
+    WhitePizzasComponent,
+    DessertsComponent,
+    DrinksComponent,
+    CreateComponent,
+    EditComponent,
+    ClientsCatalogComponent,
   ],
-  exports: [CatalogComponent, ProfileComponent, TraditionalPizzasComponent, WhitePizzasComponent, DessertsComponent, DrinksComponent]
 })
-export class MainModule { }
+export class MainModule {}

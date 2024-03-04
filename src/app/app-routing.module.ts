@@ -7,6 +7,8 @@ import { TraditionalPizzasComponent } from './main/traditional-pizzas/traditiona
 import { WhitePizzasComponent } from './main/white-pizzas/white-pizzas.component';
 import { DessertsComponent } from './main/desserts/desserts.component';
 import { DrinksComponent } from './main/drinks/drinks.component';
+import { CreateComponent } from './main/create/create.component';
+import { EditComponent } from './main/edit/edit.component';
 
 const routes: Routes = [
  {path :'login', component:LoginComponent},
@@ -16,6 +18,9 @@ const routes: Routes = [
  {path :'catalog/white', component:WhitePizzasComponent},
  {path :'catalog/desserts', component:DessertsComponent},
  {path :'catalog/drinks', component:DrinksComponent},
+ {path :'catalog/create', component:CreateComponent},
+ {path :'clients-catalog/create', component:CreateComponent},
+ {path :'clients-catalog/edit', component:EditComponent },
 
 
 ];
